@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602595753053",
+    "firebase_url": "https://vectormobiledev-13986.firebaseio.com",
+    "project_id": "vectormobiledev-13986",
+    "storage_bucket": "vectormobiledev-13986.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602595753053:android:9fd7cd8918b3dcdd",
+        "android_client_info": {
+          "package_name": "com.example.tibi.whatsinmycity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602595753053-g3fd5n1bfll6lpfoen8vapk1fc0t49c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tibi.whatsinmycity",
+            "certificate_hash": "8e1638167ee43fb02b268b25c0b394f4b13ac8b2"
+          }
+        },
+        {
+          "client_id": "602595753053-d24ajotlukoko6atihentq88qni9g6u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTl1v7SG1BElh8biZK-bcTj2S-k5be_vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602595753053-d24ajotlukoko6atihentq88qni9g6u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
