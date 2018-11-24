@@ -26,30 +26,45 @@ import java.util.Map;
 public class Login extends AppCompatActivity
 {
 
-    Button btn;
+
+
     String email="deventuredev@gmail.com",email2="deventuredev%40gmail.com", parola="deventure1@";
     Gson gson = new Gson();
     String url ="http://itec-api.deventure.co/api/Token";
+
+    Button btn,btn1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn = (Button)findViewById(R.id.button);
+        btn1 = (Button)findViewById(R.id.button2);
+
         btn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-//                Intent intent = new Intent(Login.this, Sign_Up.class);
-                //Login.this.startActivity(intent);
+                Intent intent1 = new Intent(Login.this, MapsActivity.class);
+                startActivity(intent1);
                 functie_token();
                 functie_get_user_by_email();
                 functie_is_authorized();
                 //functie_register();
             }
         });
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(Login.this, Sign_Up.class);
+                startActivity(intent2);
+            }
+        });
+
     }
 
     public void functie_token(){
