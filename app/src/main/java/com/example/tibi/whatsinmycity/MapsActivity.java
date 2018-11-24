@@ -1,5 +1,6 @@
 package com.example.tibi.whatsinmycity;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -8,6 +9,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -43,5 +45,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(Constanta).title("Constanta"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Constanta));
         mMap.moveCamera( CameraUpdateFactory.newLatLngZoom(new LatLng(44.1898238,28.6383454) , 10.0f) );
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                Intent intent = new Intent(MapsActivity.this, Postare.class);
+                startActivity(intent);
+                return false;
+            }
+        });
     }
 }
