@@ -58,8 +58,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
         android:alpha="1"
         android:background="@drawable/signup"
         app:layout_constraintBottom_toBottomOf="parent"
