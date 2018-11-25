@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/successfully_registered"
     tools:context="com.example.tibi.whatsinmycity.Successfully_Registered">
 
     <TextView
@@ -14,8 +13,8 @@
         android:fontFamily="monospace"
         android:text="Registration Successful"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
+        android:textColor="#2699FB"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
