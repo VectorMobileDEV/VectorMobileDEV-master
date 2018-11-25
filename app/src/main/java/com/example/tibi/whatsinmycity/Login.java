@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -33,7 +34,7 @@ public class Login extends AppCompatActivity
     String url ="http://itec-api.deventure.co/api/Token";
 
     Button btn,btn1;
-
+    EditText email_text, parola_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -43,6 +44,10 @@ public class Login extends AppCompatActivity
 
         btn = (Button)findViewById(R.id.button);
         btn1 = (Button)findViewById(R.id.button2);
+        email_text = findViewById(R.id.email_register);
+        parola_text = findViewById(R.id.password_register);
+        email = email_text.getText().toString();
+        parola = parola_text.getText().toString();
 
         btn.setOnClickListener(new View.OnClickListener()
         {

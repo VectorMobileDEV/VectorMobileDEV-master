@@ -16,9 +16,9 @@ import java.util.List;
 public class Sign_Up extends AppCompatActivity
 {
 
-    Button btn;
+    Button btn, btn2;
     Spinner spin,spin1;
-    String[] gender = new String[]{" ","Male","Female"};
+    String[] gender = new String[]{" ","Male","Female","Other"};
     String[] orase = new String[]{" ","Constanta", "Coming soon..."};
 
     @Override
@@ -26,9 +26,10 @@ public class Sign_Up extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__up);
-        spin = (Spinner)findViewById(R.id.simpleSpinner);
-        spin1 = (Spinner)findViewById(R.id.simpleSpinner1);
+        spin = (Spinner)findViewById(R.id.gender);
+        spin1 = (Spinner)findViewById(R.id.city);
         btn  = (Button)findViewById(R.id.button);
+        btn2 = findViewById(R.id.butonNavigare);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,gender);
         ArrayAdapter<String> adapter_2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,orase);
         spin.setAdapter(adapter);
@@ -67,6 +68,13 @@ public class Sign_Up extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent intent  =  new Intent(Sign_Up.this, Successfully_Registered.class);
+                startActivity(intent);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  =  new Intent(Sign_Up.this, Login.class);
                 startActivity(intent);
             }
         });

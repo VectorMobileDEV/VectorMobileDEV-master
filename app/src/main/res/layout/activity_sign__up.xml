@@ -6,131 +6,188 @@
     android:layout_height="match_parent"
     tools:context="com.example.tibi.whatsinmycity.Sign_Up">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/textGender"
         android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:background="@drawable/fullname"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Gender"
         android:textColor="#2699FB"
-        android:paddingLeft="20dp"
-        android:ems="10"
-        android:hint="Full Name"
-        android:singleLine="false"
+        android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/fullName"
         android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:background="@drawable/email"
-        android:textColor="#2699FB"
+        android:layout_height="34dp"
+        android:background="@drawable/fullname"
+        android:ems="10"
+        android:hint="Full Name"
+        android:paddingBottom="14dp"
         android:paddingLeft="20dp"
+        android:singleLine="false"
+        android:textColor="#2699FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:background="@drawable/email"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
         android:singleLine="false"
+        android:textColor="#2699FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.223" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/password_register"
         android:layout_width="wrap_content"
-        android:layout_height="41dp"
+        android:layout_height="34dp"
         android:background="@drawable/password"
-        android:textColor="#2699FB"
-        android:paddingLeft="20dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:nestedScrollingEnabled="false"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:textColor="#2699FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.341" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/age"
         android:layout_width="wrap_content"
-        android:layout_height="41dp"
+        android:layout_height="34dp"
         android:background="@drawable/age"
-        android:textColor="#2699FB"
-        android:paddingLeft="20dp"
         android:ems="10"
         android:hint="Age"
         android:inputType="number"
         android:nestedScrollingEnabled="false"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:textColor="#2699FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.694" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:alpha="1"
         android:background="@drawable/continue_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 
     <Spinner
-        android:id="@+id/simpleSpinner"
+        android:id="@+id/gender"
         android:layout_width="161dp"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843" />
+        app:layout_constraintVertical_bias="0.812" />
 
     <Spinner
-        android:id="@+id/simpleSpinner1"
+        android:id="@+id/city"
         android:layout_width="161dp"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.451" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/radius"
         android:layout_width="wrap_content"
-        android:layout_height="41dp"
+        android:layout_height="34dp"
         android:background="@drawable/radius_of_interest"
-        android:textColor="#2699FB"
-        android:paddingLeft="20dp"
         android:ems="10"
         android:hint="Radius (km^2)"
         android:inputType="number"
         android:nestedScrollingEnabled="false"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:textColor="#2699FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintVertical_bias="0.575" />
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="City"
+        android:textColor="#2699FB"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Button
+        android:id="@+id/butonNavigare"
+        android:layout_width="29dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sageatanavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
 
 </android.support.constraint.ConstraintLayout>
